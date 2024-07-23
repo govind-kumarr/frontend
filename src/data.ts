@@ -19,6 +19,11 @@ export interface ExperienceInfo {
   description: string;
 }
 
+export interface ServiceInfo {
+  title: string;
+  description: string;
+}
+
 export const data: PersonalInfo = {
   full_name: "Govind Kumar",
   role: "Full Stack Developer",
@@ -34,15 +39,15 @@ export const projects: ProjectInfo[] = [
     image_path: "",
   },
   {
-    title: "Demo Project 1",
+    title: "Emily AI",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sunt quis cupiditate ducimus non esse?",
     github_link: "#",
-    deployed_link: "#",
+    deployed_link: "https://aichatbot.boffinblocks.com/",
     image_path: "",
   },
   {
-    title: "Demo Project 1",
+    title: "Selfcad 3D design",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sunt quis cupiditate ducimus non esse?",
     github_link: "#",
@@ -67,12 +72,43 @@ export const experiences: ExperienceInfo[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit Ducimus, quas nobis. Deserunt id error quam dicta velit vitae eos officia, modiculpa sed deleniti aperiam eveniet, possimus ipsum delectus nam rem?Tempore, quibusdam quis.",
   },
+  {
+    position: "MERN Stack Trainee",
+    organization: "Masai",
+    startTime: new Date("2022-06-10"),
+    endTime: new Date("2023-03-15"),
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit Ducimus, quas nobis. Deserunt id error quam dicta velit vitae eos officia, modiculpa sed deleniti aperiam eveniet, possimus ipsum delectus nam rem?Tempore, quibusdam quis.",
+  },
+  {
+    position: "BCA",
+    organization: "Laureate Institute of Management and Information Technology Kathog",
+    startTime: new Date("2022-06-10"),
+    endTime: new Date("2023-03-15"),
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit Ducimus, quas nobis. Deserunt id error quam dicta velit vitae eos officia, modiculpa sed deleniti aperiam eveniet, possimus ipsum delectus nam rem?Tempore, quibusdam quis.",
+  },
 ];
 
 export const about_me = {
   description:
     "I am a full-stack developer with expertise in the MERN stack, creating dynamic and responsive web applications. In addition to web development, I utilize Python to build generative AI applications and chatbots, enhancing user experiences with intelligent automation. My knowledge of AWS services, including S3, Route 53, and EC2, ensures reliable and scalable application deployment. I also manage Nginx servers for proxies and load balancing, and streamline CI/CD processes with GitHub Actions. My diverse skill set allows me to deliver robust and innovative solutions, staying at the forefront of technology to tackle modern development challenges.",
 };
+
+export const services: ServiceInfo[] = [
+  {
+    title: "Frontend Development",
+    description: "Transforming wireframes into high-performance, responsive websites using React and Next.js."
+  },
+  {
+    title: "Backend Development",
+    description: "Building robust, scalable backends with top-tier frameworks such as Express and FastAPI."
+  },
+  {
+    title: "AI Development",
+    description: "Crafting AI solutions with advanced tools like LangChain, LLaMAIndex, and OpenAI APIs."
+  }
+]
 
 export const social_links = [
   {

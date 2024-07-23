@@ -10,22 +10,16 @@ const Sidebar = () => {
         </div>
         <ul className="side-nav__content--social">
           <a href="#">
-            <i className="fab fa-facebook-f" />
-          </a>
-          <a href="#">
             <i className="fab fa-twitter" />
           </a>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/govind-kumar-9242ba250/">
             <i className="fab fa-linkedin-in" />
           </a>
-          <a href="#">
-            <i className="fab fa-instagram" />
+          <a href="https://leetcode.com/u/govind-kumar/">
+            <i className="fa-solid fa-code"></i>
           </a>
-          <a href="#">
-            <i className="fab fa-dribbble" />
-          </a>
-          <a href="#">
-            <i className="fab fa-pinterest-p" />
+          <a href="https://github.com/govind-kumarr">
+            <i className="fa-brands fa-github"></i>
           </a>
         </ul>
       </div>

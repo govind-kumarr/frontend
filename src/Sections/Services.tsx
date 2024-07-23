@@ -1,4 +1,6 @@
 import React from "react";
+import { services } from "../data";
+import ServiceCard from "../components/ServiceCard";
 
 const Services = () => {
   return (
@@ -8,9 +10,11 @@ const Services = () => {
           Services
         </h3>
       </div>
-      <section id="services">
-        {/* Service 1 */}
-        <div className="service services__service-1">
+      <section id="services" className="">
+        {services.map((service) => {
+          return <ServiceCard service_info={service} />;
+        })}
+        {/* <div className="service services__service-1">
           <i className="fas fa-quidditch" />
           <h3 className="services--title services__service-1--title">
             UI Design
@@ -20,7 +24,6 @@ const Services = () => {
             nisi, atque deserunt iste ipsa odit!
           </p>
         </div>
-        {/* Service 2 */}
         <div className="service services__service-2">
           <i className="fas fa-tasks" />
           <h3 className="services--title services__service-2--title">
@@ -31,7 +34,6 @@ const Services = () => {
             nisi, atque deserunt iste ipsa odit!
           </p>
         </div>
-        {/* Service 3 */}
         <div className="service services__service-3">
           <i className="fas fa-mobile-alt" />
           <h3 className="services--title services__service-3--title">
@@ -42,7 +44,6 @@ const Services = () => {
             nisi, atque deserunt iste ipsa odit!
           </p>
         </div>
-        {/* Service 4 */}
         <div className="service services__service-4">
           <i className="fas fa-paint-roller" />
           <h3 className="services--title services__service-4--title">
@@ -53,7 +54,6 @@ const Services = () => {
             nisi, atque deserunt iste ipsa odit!
           </p>
         </div>
-        {/* Service 5 */}
         <div className="service services__service-5">
           <i className="far fa-edit" />
           <h3 className="services--title services__service-5--title">
@@ -64,7 +64,6 @@ const Services = () => {
             nisi, atque deserunt iste ipsa odit!
           </p>
         </div>
-        {/* Service 6 */}
         <div className="service services__service-6">
           <i className="fas fa-project-diagram" />
           <h3 className="services--title services__service-6--title">
@@ -74,7 +73,7 @@ const Services = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
             nisi, atque deserunt iste ipsa odit!
           </p>
-        </div>
+        </div> */}
       </section>
     </div>
   );

@@ -12,7 +12,7 @@ const Experience = () => {
       </div>
 
       <div className="work_wrapper px-80 py-12">
-        <ol className="relative border-s-2 border-secondary dark:border-secondary">
+        <ol className="relative border-s-2 border-secondary dark:border-secondary flex flex-col gap-20">
           {experiences.map((exp, index) => {
             return <ExperienceCard key={index} exp_info={exp} />;
           })}
